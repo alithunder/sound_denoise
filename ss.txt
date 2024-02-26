@@ -1,0 +1,14 @@
+import tkinter as tk
+from tkinter import ttk, filedialog, messagebox
+from pedalboard.io import AudioFile
+from pedalboard import *
+import os
+from pydub import AudioSegment
+from pydub.playback import play
+import threading
+# Import the apply_algorithm function from each algorithm file
+from audio1 import apply_algorithm as apply_algorithm_1
+from audio2 import apply_algorithm as apply_algorithm_2
+from crowd import apply_algorithm as apply_algorithm_3
+from crowd2 import apply_algorithm as apply_algorithm_4
+import numpy as np
